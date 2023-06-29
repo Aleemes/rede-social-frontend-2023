@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+
+
+section#tarefas {
+    margin: 0.5rem;
+}
+
+#list-tarefas {
+    list-style: none;
+    font-size: large;
+  }
+  
+
+#criado-em {
+  color: #9b9696;
+  font-style: italic;
+  font-size: 0.8rem;
+  padding-left: 1rem;
+}
+
+.check-false::before{
+  content: "";
+  position: absolute;
+  border: #000000 solid;
+  top: 20px;
+  left: 16px;
+  height: 13px;
+  width: 13px;
+  border-width: 2px;
+}
+
+.check-true {
+  color: #000000;
+  text-decoration: line-through;
+}
+
+.check-true::before{
+  content: "";
+  position: absolute;
+  border: #000000 solid;
+  top: 17px;
+  left: 16px;
+  height: 15px;
+  width: 7px;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+
+.linha-tarefa {
+  position: relative;
+  padding: 0.5rem;
+  text-decoration: none;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: 1.3rem;
+}
+
+
+.texto-tarefa {
+  text-decoration: none;
+  color:black;
+  padding-left: 2rem;
+}
+
+.coluna-botoes {
+  align-items: right;
+}
+
+input[type='text']:focus{
+  border-radius:30px;
+}
+
+.item-tarefa {
+  cursor: pointer
+}
