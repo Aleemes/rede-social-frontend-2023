@@ -100,8 +100,8 @@ function ListTarefas({ editar, dadosUsuario, tarefas, setTarefas, atualizarTaref
                                         <span 
                                             className="btn btn-success" 
                                             onClick={() => editar(tarefa)}>
-                                                <PencilSquare/>
-                                                <img src={"coracao.png"}// ADD HEART DO POST 
+                                            {/*  <PencilSquare/> 
+                                                <img src={"coracao.png"}> </img>// ADD HEART DO POST */}
                                         </span>
                                         <span 
                                             className="btn btn-danger item-tarefa" 
